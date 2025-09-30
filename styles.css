@@ -1,0 +1,246 @@
+/* reset css */
+* {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-variation-settings: "wdth" 100;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* header */
+.header {
+	height: 70px;
+	border-bottom: 1px solid #ddd;
+}
+
+.header > .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+#logo {
+	width: 96px;
+	height: 60px;
+}
+
+nav#navbar {
+	height: 100%;
+}
+
+ul.nav-list {
+	height: 100%;
+}
+
+.navbar ul {
+	display: flex;
+	gap: 24px;
+}
+
+.navbar ul li {
+	display: flex;
+}
+
+.navbar ul li a {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+
+	display: flex;
+	align-items: center;
+
+	position: relative;
+}
+
+.navbar ul li a::after {
+	content: "";
+
+	width: 0%;
+	height: 2px;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #333;
+
+	transition: all 0.35s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+	width: 100%;
+}
+
+.header .toolbar {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.header .toolbar .search-wrapper {
+	position: relative;
+}
+
+.header .toolbar .search-wrapper .search-icon {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.4rem;
+}
+
+.header .toolbar .search-wrapper .search-input {
+	width: 200px;
+	height: 40px;
+	background-color: #ddd;
+	border-radius: 4px;
+	padding: 12px 12px 12px 40px;
+	border: none;
+	outline: none;
+}
+
+.header .toolbar .search-wrapper .search-input:focus {
+	background-color: #eee;
+}
+
+.header .toolbar .buttons {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.header .toolbar .buttons .btn {
+	cursor: pointer;
+}
+.header .toolbar .buttons .btn > i {
+	font-size: 1.3rem;
+}
+
+/* hero */
+.hero {
+	margin-bottom: 70px;
+}
+
+.top-products > .container {
+	max-width: 1280px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 12px;
+	row-gap: 24px;
+}
+
+/* product card */
+
+.product-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 310px;
+	border: 1px solid #ddd;
+
+	position: relative;
+
+	transition: all 0.35s ease-in-out;
+}
+.product-wrapper:hover {
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.product-wrapper .img-wrapper {
+	cursor: pointer;
+	width: 310px;
+	height: 310px;
+	overflow: hidden;
+}
+
+.product-wrapper .img-wrapper img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.product-wrapper .product-info {
+	display: flex;
+	flex-direction: column;
+
+	padding: 12px;
+
+	gap: 12px;
+}
+
+.product-wrapper .size-color,
+.product-wrapper .sell-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-wrapper .price {
+	font-size: 16px;
+}
+.product-wrapper .sold {
+	color: red;
+}
+
+.product-wrapper .name {
+	cursor: pointer;
+}
+
+.product-wrapper .name:hover {
+	color: purple;
+}
+
+.product-wrapper .icons {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	padding: 0 12px;
+	right: 0;
+
+	padding-top: 12px;
+}
+
+.label {
+	background-color: #18b460;
+	border-radius: 2px;
+	width: 42px;
+	height: 22px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9rem;
+}
+
+/* banner */
+.banner {
+	overflow: hidden;
+}
+.banner > .container {
+	background-image: url(./assets/images/banner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 750px;
+
+	transition: all 0.35s ease;
+}
+
+.banner > .container:hover {
+	transform: scale(1.1);
+}
