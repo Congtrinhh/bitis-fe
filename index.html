@@ -290,6 +290,46 @@
 				}
 				goToSlide(targetIndex);
 			}
+
+			const loadProducts = async (pageSize=10, pageIndex=0) => {
+				try {
+					const response = await fetch('./data/products.json');
+					if (!response.ok) {
+						throw new Error('Network response was not ok');
+					}
+					const products = await response.json();
+
+					products.forEach(product => appendProduct(product));
+
+					console.log(products);
+				} catch (error) {
+					console.error('There has been a problem with your fetch operation:', error);
+				}
+			}
+			const appendProduct = (product) => {
+				// get container
+				const container = document.querySelector('.top-products > .container');
+				const template = `<div class="product-wrapper">
+						<div class="img-wrapper"><img src="${product.image}" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">${product.name}</div>
+							<div class="sell-info">
+								<div class="price">${product.price.toLocaleString()} vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div style="display: ${product.category === 'new' ? 'flex' : 'none'}" class="label">Mới</div>
+							</div>
+						</div>
+					</div>`;
+				container.innerHTML += template;
+			}
+			 loadProducts();
+
 		</script>
 	</body>
 </html>
