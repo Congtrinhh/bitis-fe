@@ -318,3 +318,46 @@ ul.nav-list {
 	font-weight: bold;
 	color: var(--link-color);
 }
+
+/* carousel */
+.carousel-item {
+	/* display: none; */
+
+	opacity: 0;
+	position: absolute;
+	transition: all 0.5s ease-in-out;
+}
+.active.carousel-item {
+	/* display: block; */
+	opacity: 1;
+}
+
+#heroCarousel {
+	position: relative;
+	height: 750px;
+}
+
+#carouselDots {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 24px;
+
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.dot {
+	width: 24px;
+	height: 24px;
+	padding: 7px;
+	border-radius: 50%;
+	background: #333;
+	background-clip: content-box;
+	cursor: pointer;
+}
+.dot.active {
+	border: 1px solid var(--text-color);
+}

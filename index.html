@@ -65,11 +65,19 @@
 		<!-- main -->
 		<main class="main-content">
 			<!-- hero -->
-			<section class="hero">
-				<div class="hero-images">
-					<img src="./assets/images/bitis-hero.jpg" alt="hero image" class="hero-image" height="750" />
+			<section class="hero" id="heroCarousel">
+				<div class="hero-images carousel-items">
+					<div class="carousel-item active">
+						<img src="./assets/images/bitis-hero.jpg" alt="hero image" class="hero-image" height="750" />
+					</div>
+					<div class="carousel-item ">
+						<img src="https://cdn.hstatic.net/files/1000230642/file/1920x750__3_.png" alt="hero image" class="hero-image" height="750" />
+					</div>
+					<div class="carousel-item">
+						<img src="https://cdn.hstatic.net/files/1000230642/file/1920x750__4_.png" alt="hero image" class="hero-image" height="750" />
+					</div>
 				</div>
-				<div class="hero-buttons"></div>
+				<div class="hero-buttons" id="carouselDots"></div>
 			</section>
 			<!-- top products -->
 			<section class="top-products">
@@ -230,5 +238,58 @@
 				</div>
 			</div>
 		</footer>
+
+		<script>
+
+			// vẽ dot
+			//lấy số lượng ảnh
+			const carouselContainer = document.getElementById('heroCarousel');
+			const carouselItems = carouselContainer.querySelectorAll('.carousel-item');
+			const totalItems = carouselItems.length;
+
+			const dotContainer = document.getElementById('carouselDots');
+			for(let i=0; i<totalItems; i++) {
+				const dot = document.createElement('div');
+				dot.classList.add('dot');
+				if (i===0) {
+					dot.classList.add('active');
+				}
+
+				//lắng nghe sk dot click
+				dot.addEventListener('click', () => {
+					goToSlide(i);
+				})
+
+				dotContainer.appendChild(dot);
+			}
+
+			const goToSlide = (index) => {
+			
+				//reset active class
+				carouselItems.forEach(item => item.classList.remove('active'));
+				const dots = dotContainer.querySelectorAll('.dot');
+				dots.forEach(dot => dot.classList.remove('active'));
+				// set active class cho item
+				carouselItems[index].classList.add('active');
+				dots[index].classList.add('active');
+			}
+
+			setInterval(() => {
+				autoPlay();
+			}, 3000);
+
+			// auto play
+			const autoPlay = () => 
+			{
+				//find current active index
+				const currentIndex = Array.from(carouselItems).findIndex(item => item.classList.contains('active'));
+				let targetIndex = currentIndex + 1;
+				// set next index to active
+				if (targetIndex >= totalItems) {
+					targetIndex = 0;
+				}
+				goToSlide(targetIndex);
+			}
+		</script>
 	</body>
 </html>
