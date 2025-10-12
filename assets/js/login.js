@@ -43,7 +43,7 @@ function validateOnInput(e) {
 	const value = inputEl.value;
 	console.log(value);
 
-	if (value === "" || value === null || value === undefined) {
+	if (value === "" || value === null || value === undefined || value.trim() === "") {
 		inputEl.classList.add("error");
 		inputEl.parentElement.querySelector(".error-message").classList.add("active");
 
