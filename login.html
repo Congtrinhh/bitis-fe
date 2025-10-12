@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Đăng nhập</title>
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<link rel="stylesheet" href="assets/css/login.css" />
+	</head>
+	<body>
+		<main class="main-content">
+			<h1>Đăng nhập</h1>
+			<form id="loginForm" onsubmit="handleSubmit(event)">
+				<div class="form-group">
+					<label for="username">Tên đăng nhập (*):</label>
+					<input type="text" id="username" name="username" oninput="validateOnInput(event)" />
+					<div class="error-message">Vui lòng nhập trường này</div>
+				</div>
+				<div class="form-group">
+					<label for="password">Mật khẩu (*):</label>
+					<input type="password" id="password" name="password" oninput="validateOnInput(event)" />
+					<div class="error-message">Vui lòng nhập trường này</div>
+				</div>
+				<button type="submit" id="submitButton">Đăng nhập</button>
+			</form>
+		</main>
+		<script src="assets/js/login.js"></script>
+	</body>
+</html>
