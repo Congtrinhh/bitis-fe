@@ -210,7 +210,7 @@ ul.nav-list {
 }
 
 .banner > .container {
-	background-image: url(./assets/images/banner.jpg);
+	background-image: url(../images/banner.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 750px;
