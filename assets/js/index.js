@@ -71,6 +71,41 @@ function loadProductsAjax() {
 
 $(document).ready(function () {
 	loadProductsAjax();
+
+	$("#ajaxButtonGet").click(function () {
+		$.ajax({
+			url: "https://jsonplaceholder.typicode.com/posts/1",
+			type: "get",
+			success: function (data) {
+				console.log(data);
+			},
+			error: function (err) {
+				console.error("Error fetching data:", err);
+			},
+		});
+	});
+
+	$("#ajaxButtonSave").click(function () {
+		const postData = {
+			name: "Hunter X - Denim",
+			data: {
+				price: 645000,
+				inStock: true,
+			},
+		};
+		$.ajax({
+			url: "https://api.restful-api.dev/objects",
+			type: "post",
+			data: JSON.stringify(postData),
+			contentType: "application/json",
+			success: function (data) {
+				console.log(data);
+			},
+			error: function (err) {
+				console.error("Error fetching data:", err);
+			},
+		});
+	});
 });
 
 /**

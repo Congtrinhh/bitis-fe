@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+
+		<!-- jquery -->
+		<script
+			src="https://code.jquery.com/jquery-3.7.1.min.js"
+			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			crossorigin="anonymous"
+		></script>
+
+		<!-- reset css -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- icon -->
+		<script src="https://kit.fontawesome.com/ea7e180c34.js" crossorigin="anonymous"></script>
+
+		<!-- local css -->
+		<link rel="stylesheet" href="assets/css/common.css" />
+		<link rel="stylesheet" href="assets/css/header.css" />
+		<link rel="stylesheet" href="assets/css/footer.css" />
+		<link rel="stylesheet" href="assets/css/product-list.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header class="header" id="header">
+			<div class="container">
+				<div id="toggleMenuBtn" onclick="toggleNavbar()"><i class="fa fa-bars"></i></div>
+				<a id="logo" href="/"><img src="./assets/images/header-logo.svg" alt="logo" /></a>
+				<nav class="navbar" id="navbar">
+					<ul class="nav-list">
+						<li class="nav-item"><a href="#" class="nav-link">Nhãn hiệu</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Nam</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Nữ</a></li>
+					</ul>
+				</nav>
+				<div class="toolbar">
+					<div class="search-wrapper">
+						<input type="text" class="search-input" placeholder="Bạn cần tìm gì..." />
+						<i class="fa-solid fa-magnifying-glass search-icon"></i>
+					</div>
+					<div class="buttons">
+						<div class="btn btn-user">
+							<i class="fa-regular fa-user"></i>
+						</div>
+						<div class="btn btn-cart">
+							<i class="fa-solid fa-bag-shopping"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- main -->
+		<main class="main-content">
+			<section class="topbar" id="topbar">
+				<div class="filters">
+					<div class="category-filter-wrapper">
+						<label for=""></label>
+						<select name="categoryFilter" id="categoryFilter">
+							<option value="1">Bitis Hunter</option>
+							<option value="2">Bitis X</option>
+							<option value="3">Bitis Y</option>
+						</select>
+					</div>
+				</div>
+				<div class="search-wrapper">
+					<input
+						type="text"
+						name="searchTerm"
+						class="input-text search-term"
+						placeholder="Nhập từ khoá tìm kiếm"
+					/>
+					<i class="fa fa-search"></i>
+				</div>
+			</section>
+			<!-- product list -->
+			<section id="productList" class="product-list">
+				<div class="product-parent">
+					<div class="product-wrapper">
+						<div class="img-wrapper"><img src="https://picsum.photos/id/237/200/300" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</div>
+							<div class="sell-info">
+								<div class="price">1.000.000 vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div class="label">Mới</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-parent">
+					<div class="product-wrapper">
+						<div class="img-wrapper"><img src="https://picsum.photos/id/237/200/300" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</div>
+							<div class="sell-info">
+								<div class="price">1.000.000 vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div class="label">Mới</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-parent">
+					<div class="product-wrapper">
+						<div class="img-wrapper"><img src="https://picsum.photos/id/237/200/300" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</div>
+							<div class="sell-info">
+								<div class="price">1.000.000 vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div class="label">Mới</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-parent">
+					<div class="product-wrapper">
+						<div class="img-wrapper"><img src="https://picsum.photos/id/237/200/300" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</div>
+							<div class="sell-info">
+								<div class="price">1.000.000 vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div class="label">Mới</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-parent">
+					<div class="product-wrapper">
+						<div class="img-wrapper"><img src="https://picsum.photos/id/237/200/300" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</div>
+							<div class="sell-info">
+								<div class="price">1.000.000 vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div class="label">Mới</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-parent">
+					<div class="product-wrapper">
+						<div class="img-wrapper"><img src="https://picsum.photos/id/237/200/300" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</div>
+							<div class="sell-info">
+								<div class="price">1.000.000 vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div class="label">Mới</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="product-parent">
+					<div class="product-wrapper">
+						<div class="img-wrapper"><img src="https://picsum.photos/id/237/200/300" alt="" /></div>
+						<div class="product-info">
+							<div class="size-color">
+								<div class="size">1 Size</div>
+								<div class="color">1 Màu sắc</div>
+							</div>
+							<div class="name">Giày Thể Thao Biti's Helio Teen Nam Màu Xanh Dương BSB007400XDG</div>
+							<div class="sell-info">
+								<div class="price">1.000.000 vnd</div>
+								<div class="sold">Đã bán: 200</div>
+							</div>
+							<div class="icons">
+								<div class="label">Mới</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer -->
+		<!-- <footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer-left">
+					<div class="title">Thông tin</div>
+					<div class="list">
+						<div class="list-item"><a href="" class="link">Về Biti's</a></div>
+						<div class="list-item"><a href="" class="link">Chính sách đổi trả</a></div>
+						<div class="list-item"><a href="" class="link">Chính sách bảo hành</a></div>
+						<div class="list-item"><a href="" class="link">Hướng dẫn mua hàng</a></div>
+						<div class="list-item"><a href="" class="link">Liên hệ</a></div>
+					</div>
+				</div>
+				<div class="footer-right">
+					<div class="logo-wrapper"><img src="./assets/images/header-logo.svg" alt="logo" /></div>
+					<div class="company-wrapper">
+						<div class="company-name">Công ty TNHH Biti's</div>
+						<div class="company-address">123 Đường ABC, Phường 1, Quận 1, TP. HCM</div>
+						<a href="tel:0123456789" class="phone-number">0123 456 789</a></div>
+					<div class="email">Email:Liên hệ các vấn đề về đơn hàng Online, kênh cửa hàng, đại lý (offline) : <a href="mailto:chamsockhachhang@bitis.com.vn">chamsockhachhang@bitis.com.vn</a></div>
+					<div class="hotline-support-wrapper">
+						<div class="hotline"><b>Hotline</b>: <a href="tel:1800 6018" >1800 6018</a></div>
+						<div class="time"> <b>Thời gian tư vấn</b>: 8h – 21h30 các ngày trong tuần (trừ ngày Lễ, Tết)</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</footer> -->
+
+		<script src="./assets/js/product-list.js"></script>
+	</body>
+</html>

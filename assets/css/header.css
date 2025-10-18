@@ -1,0 +1,107 @@
+.header {
+	height: 70px;
+	border-bottom: 1px solid #ddd;
+}
+
+.header > .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+#logo {
+	width: 96px;
+}
+
+nav#navbar {
+	height: 100%;
+}
+
+ul.nav-list {
+	height: 100%;
+}
+
+.navbar ul {
+	display: flex;
+	gap: 24px;
+}
+
+.navbar ul li {
+	display: flex;
+}
+
+.navbar ul li a {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+
+	display: flex;
+	align-items: center;
+
+	position: relative;
+}
+
+.navbar ul li a::after {
+	content: "";
+
+	width: 0%;
+	height: 2px;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #333;
+
+	transition: all 0.35s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+	width: 100%;
+}
+
+.header .toolbar {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.header .toolbar .search-wrapper {
+	position: relative;
+}
+
+.header .toolbar .search-wrapper .search-icon {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.4rem;
+}
+
+.header .toolbar .search-wrapper .search-input {
+	width: 200px;
+	height: 40px;
+	background-color: #ddd;
+	border-radius: 4px;
+	padding: 12px 12px 12px 40px;
+	border: none;
+	outline: none;
+}
+
+.header .toolbar .search-wrapper .search-input:focus {
+	background-color: #eee;
+}
+
+.header .toolbar .buttons {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+
+.header .toolbar .buttons .btn {
+	cursor: pointer;
+}
+.header .toolbar .buttons .btn > i {
+	font-size: 1.3rem;
+}
