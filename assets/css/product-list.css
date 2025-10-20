@@ -1,0 +1,260 @@
+main.main-content {
+	display: flex;
+	flex-direction: column;
+	padding: 24px 20px;
+	gap: 16px;
+	margin: auto;
+}
+
+section#topbar {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+select#categoryFilter {
+	width: 100%;
+	padding: 6px 8px;
+	border-radius: 4px;
+	border: 1px solid #999;
+	min-height: 40px;
+}
+
+.search-wrapper {
+	position: relative;
+}
+
+.input-text {
+	padding: 6px 12px;
+	border-radius: 4px;
+	outline: none;
+	border: 1px solid #999;
+	min-height: 40px;
+}
+.input-text.search-term {
+	padding-left: 40px;
+	width: 100%;
+}
+i.fa.fa-search {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.2rem;
+}
+
+.product-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 16px;
+}
+
+/* product card */
+.product-parent {
+	flex-basis: 100%;
+}
+.product-parent .product-wrapper {
+	margin-right: 0;
+}
+
+.product-wrapper {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ddd;
+
+	position: relative;
+
+	transition: all 0.35s ease-in-out;
+
+	margin-right: 16px;
+}
+.product-wrapper:hover {
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.product-wrapper .img-wrapper {
+	cursor: pointer;
+	overflow: hidden;
+
+	padding-bottom: 100%;
+	position: relative;
+}
+
+.product-wrapper .img-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+}
+
+.product-wrapper .product-info {
+	display: flex;
+	flex-direction: column;
+
+	padding: 12px;
+
+	gap: 12px;
+}
+
+.product-wrapper .size-color,
+.product-wrapper .sell-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-wrapper .price {
+	font-size: 16px;
+}
+.product-wrapper .sold {
+	color: red;
+}
+
+.product-wrapper .name {
+	cursor: pointer;
+}
+
+.product-wrapper .name:hover {
+	color: purple;
+}
+
+.product-wrapper .icons {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	padding: 0 12px;
+	right: 0;
+
+	padding-top: 12px;
+}
+
+.label {
+	background-color: #18b460;
+	border-radius: 2px;
+	width: 42px;
+	height: 22px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+	main.main-content {
+		max-width: 720px;
+	}
+
+	.product-list {
+		justify-content: flex-start;
+	}
+
+	.product-parent {
+		flex-basis: 50%;
+	}
+
+	.product-parent .product-wrapper {
+		margin-right: 16px;
+	}
+
+	.product-parent:nth-of-type(2n) .product-wrapper {
+		margin-right: 0;
+	}
+
+	section#topbar {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.filters {
+		flex-basis: 40%;
+	}
+	.search-wrapper {
+		flex-basis: 40%;
+	}
+}
+
+@media (min-width: 1024px) {
+	main.main-content {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	main.main-content {
+		max-width: 1140px;
+	}
+
+	.product-wrapper {
+		flex-grow: 1;
+	}
+
+	.product-parent {
+		flex-basis: 25%;
+	}
+
+	.product-parent:nth-of-type(n) .product-wrapper {
+		margin-right: 16px;
+	}
+	.product-parent:nth-of-type(4n) .product-wrapper {
+		margin-right: 0;
+	}
+}
+
+#toggleMenuBtn {
+	display: none;
+}
+#toggleMenuBtn > i {
+	font-size: 1.6rem;
+}
+body.no-scroll {
+	position: fixed;
+	overflow: hidden;
+}
+@media (max-width: 576px) {
+	#toggleMenuBtn {
+		display: block;
+	}
+
+	.header .toolbar .search-wrapper {
+		display: none;
+	}
+
+	nav#navbar {
+		position: fixed;
+		top: 50px;
+		left: 0;
+		z-index: -1;
+		visibility: hidden;
+		background-color: #fff;
+		width: 100%;
+		height: calc(100vh - 50px);
+		box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+			rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+	}
+	nav#navbar.active {
+		z-index: 1;
+		visibility: visible;
+	}
+	.navbar ul {
+		flex-direction: column;
+		margin: 0 20px;
+		padding-top: 8px;
+		gap: 0px;
+	}
+	.navbar ul li {
+		padding: 12px 0;
+		border-bottom: 1px solid #eee;
+	}
+	.header {
+		height: 50px;
+	}
+	#logo {
+		width: 64px;
+	}
+	.header > .container {
+		padding: 0 16px;
+	}
+}
