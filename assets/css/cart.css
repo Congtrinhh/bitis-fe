@@ -1,0 +1,88 @@
+.features-wrapper .img-parent {
+	width: 32px;
+	margin-right: 8px;
+}
+
+.name {
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.price {
+	font-size: 25px;
+	font-weight: 500;
+	color: #e50000;
+}
+
+.colors {
+	display: flex;
+}
+.color-item {
+	position: relative;
+	width: 80px;
+	display: flex;
+	flex-direction: column;
+	margin: 5px 3px;
+	padding: 5px;
+}
+
+.color-item::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	background-color: #333;
+	bottom: 0;
+	display: none;
+}
+
+.color-item.active::after {
+	display: block;
+}
+
+.color-name {
+	text-align: center;
+}
+
+.sizes {
+	display: flex;
+	align-items: center;
+}
+.size-item {
+	width: 74px;
+	height: 32px;
+	text-align: center;
+	border: 1px solid #ddd;
+	line-height: 32px;
+}
+.size-item.active {
+	background: #333;
+	color: #fff;
+	font-weight: 700;
+	border-color: #333;
+}
+
+.increase-decrease-button {
+	display: inline-flex;
+	border: 1px solid #eee;
+}
+.increase-decrease-button .btn {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	font-size: 1.4rem;
+	background: #eee;
+	border-radius: 0;
+}
+
+.increase-decrease-button .quantity {
+	width: 48px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	background: #fff;
+}
