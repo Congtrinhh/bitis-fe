@@ -25,3 +25,10 @@ a {
 	text-decoration: none;
 	color: inherit;
 }
+
+.icon-parent {
+	cursor: pointer;
+}
+.icon {
+	font-size: 1.2rem;
+}

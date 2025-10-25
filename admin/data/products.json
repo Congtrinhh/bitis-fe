@@ -1,0 +1,178 @@
+[
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter X Original",
+		"category": "Sneakers",
+		"inStock": 45,
+		"price": 1290000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Street",
+		"category": "Lifestyle",
+		"inStock": 23,
+		"price": 980000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Core Black",
+		"category": "Sneakers",
+		"inStock": 0,
+		"price": 1150000,
+		"isActive": false
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Jogging",
+		"category": "Running",
+		"inStock": 67,
+		"price": 1350000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Sandal EVA",
+		"category": "Sandals",
+		"inStock": 89,
+		"price": 450000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Leather Boot",
+		"category": "Boots",
+		"inStock": 12,
+		"price": 2100000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Slip-on Canvas",
+		"category": "Casual",
+		"inStock": 34,
+		"price": 750000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Festive Edition",
+		"category": "Limited Edition",
+		"inStock": 18,
+		"price": 1890000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis School Shoes",
+		"category": "School",
+		"inStock": 156,
+		"price": 320000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Retro",
+		"category": "Retro",
+		"inStock": 0,
+		"price": 1450000,
+		"isActive": false
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Safety Shoes Pro",
+		"category": "Safety",
+		"inStock": 78,
+		"price": 1650000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Mesh Breathable",
+		"category": "Running",
+		"inStock": 42,
+		"price": 1200000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Flip Flop Summer",
+		"category": "Sandals",
+		"inStock": 203,
+		"price": 180000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Classic White",
+		"category": "Sneakers",
+		"inStock": 31,
+		"price": 1290000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Oxford Formal",
+		"category": "Formal",
+		"inStock": 25,
+		"price": 1850000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Kids",
+		"category": "Kids",
+		"inStock": 67,
+		"price": 650000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hiking Adventure",
+		"category": "Outdoor",
+		"inStock": 19,
+		"price": 2250000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Loafer Premium",
+		"category": "Formal",
+		"inStock": 38,
+		"price": 1750000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Neon Green",
+		"category": "Limited Edition",
+		"inStock": 8,
+		"price": 1590000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Basketball High-Top",
+		"category": "Sports",
+		"inStock": 29,
+		"price": 1680000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Canvas Low-Cut",
+		"category": "Casual",
+		"inStock": 91,
+		"price": 590000,
+		"isActive": true
+	},
+	{
+		"thumbnail": "https://cdn.hstatic.net/products/1000230642/hbbm01400den__2__2d6cdaa80a9b4cc1ab1fbdae2c46ec18_master.jpg",
+		"productName": "Bitis Hunter Premium Gold",
+		"category": "Premium",
+		"inStock": 15,
+		"price": 2890000,
+		"isActive": true
+	}
+]
