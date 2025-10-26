@@ -64,7 +64,7 @@ const loadProducts = async (pageSize = 10, pageIndex = 0) => {
  * load sản phẩm bằng ajax
  */
 function loadProductsAjax() {
-	$.getJSON("../../data/products.json", function (products) {
+	$.getJSON("/data/products.json", function (products) {
 		products.forEach((product) => appendProduct(product));
 	});
 }

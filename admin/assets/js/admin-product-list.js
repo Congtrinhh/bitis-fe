@@ -16,7 +16,7 @@ $(document).ready(function () {
 	$(".table-wrapper").outerHeight(mainContentHeight - paginationHeight - breadcrumbHeight);
 
 	// product table
-	$.getJSON("data/products.json", function (products) {
+	$.getJSON("/admin/data/products.json", function (products) {
 		console.log(products);
 
 		let rows = "";
