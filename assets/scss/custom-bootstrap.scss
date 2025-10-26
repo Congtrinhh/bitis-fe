@@ -1,0 +1,263 @@
+// assets/scss/custom.scss
+// ============================================
+// CUSTOM BOOTSTRAP WITH SASS (FIXED PATHS)
+// ============================================
+
+// 1. Include functions first (required)
+// FIXED: Go up TWO levels (../../) to reach node_modules
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Override default variables BEFORE importing Bootstrap
+// This is where all the magic happens!
+
+// ============================================
+// COLORS - Much simpler than CSS approach!
+// ============================================
+$primary: #ff2e63;
+$secondary: #252a34;
+$success: #10b981; // Emerald green
+$info: #0ea5e9; // Sky blue
+$warning: #f59e0b; // Amber
+$danger: #ef4444; // Red
+
+$min-contrast-ratio: 3.5; // for primary button text color to be white, not black
+
+// ============================================
+// TYPOGRAPHY
+// ============================================
+// $font-family-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+// $font-family-monospace: "Fira Code", Menlo, Monaco, Consolas, monospace;
+
+$font-size-base: 1rem;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$line-height-base: 1.6;
+
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.75rem;
+$h4-font-size: 1.5rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
+
+// ============================================
+// SPACING - Change the entire spacing scale!
+// ============================================
+$spacer: 1rem;
+
+$spacers: (
+	0: 0,
+	1: $spacer * 0.375,
+	// 6px  (was 4px)
+	2: $spacer * 0.625,
+	// 10px (was 8px)
+	3: $spacer * 1,
+	// 16px (was 12px)
+	4: $spacer * 1.75,
+	// 28px (was 24px)
+	5: $spacer * 3,
+	// 48px (same)
+	6: $spacer * 4.5,
+	// 72px (custom)
+	7: $spacer * 6 // 96px (custom),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+);
+
+// ============================================
+// BORDER RADIUS
+// ============================================
+$border-radius: 0.5rem;
+$border-radius-sm: 0.375rem;
+$border-radius-lg: 0.75rem;
+$border-radius-xl: 1rem;
+$border-radius-xxl: 2rem;
+$border-radius-pill: 50rem;
+
+// ============================================
+// BUTTONS
+// ============================================
+$btn-padding-y: 0.625rem;
+$btn-padding-x: 1.25rem;
+$btn-font-weight: 600;
+// $btn-border-radius: $border-radius-lg;
+$btn-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// Button sizes
+$btn-padding-y-sm: 0.375rem;
+$btn-padding-x-sm: 0.75rem;
+$btn-padding-y-lg: 0.75rem;
+$btn-padding-x-lg: 1.5rem;
+
+// ============================================
+// CARDS
+// ============================================
+$card-border-radius: $border-radius-lg;
+$card-border-width: 1px;
+$card-spacer-y: 1.5rem;
+$card-spacer-x: 1.5rem;
+$card-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+// ============================================
+// FORMS
+// ============================================
+$input-border-radius: $border-radius;
+$input-border-radius-lg: $border-radius-lg;
+$input-border-radius-sm: $border-radius-sm;
+$input-padding-y: 0.625rem;
+$input-padding-x: 1rem;
+
+// ============================================
+// GRID BREAKPOINTS (Optional)
+// ============================================
+// $grid-breakpoints: (
+// 	xs: 0,
+// 	sm: 576px,
+// 	md: 768px,
+// 	lg: 992px,
+// 	xl: 1200px,
+// 	xxl: 1600px // Larger than default 1400px,,,,,,,,,,,,,,,,,,,,,
+// );
+
+// ============================================
+// CONTAINER MAX WIDTHS (Optional)
+// ============================================
+// $container-max-widths: (
+// 	sm: 540px,
+// 	md: 720px,
+// 	lg: 960px,
+// 	xl: 1140px,
+// 	xxl: 1480px,
+// );
+
+// ============================================
+// NAVBAR (Optional)
+// ============================================
+$navbar-padding-y: 1rem;
+$navbar-padding-x: 1.5rem;
+$navbar-brand-font-size: 1.5rem;
+
+// ============================================
+// SHADOWS (Optional)
+// ============================================
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+$box-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$box-shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+// Badge
+$badge-padding-y: 0.5em;
+
+// ============================================
+// 3. Import Bootstrap (AFTER your overrides!)
+// FIXED: Correct path to node_modules
+// ============================================
+
+// Option A: Import everything (easier, larger file)
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+// Option B: Import only what you need (smaller file, recommended for production)
+// Uncomment below and comment out the line above
+/*
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+@import "../../node_modules/bootstrap/scss/placeholders";
+
+@import "../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/utilities/api";
+*/
+
+// ============================================
+// 4. Add your own custom styles (optional)
+// ============================================
+
+// Custom button with gradient
+.btn-gradient {
+	background: linear-gradient(135deg, $primary 0%, $info 100%);
+	border: none;
+	color: white;
+	transition: all 0.3s ease;
+
+	&:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba($primary, 0.4);
+		color: white;
+	}
+
+	&:active {
+		transform: translateY(0);
+	}
+}
+
+// Custom card styles
+.card-hover {
+	transition: all 0.3s ease;
+
+	&:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	}
+}
+
+// Custom utility classes
+.shadow-custom {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-gradient {
+	background: linear-gradient(135deg, $primary 0%, $info 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+// Responsive typography helper
+@include media-breakpoint-up(md) {
+	h1 {
+		font-size: $h1-font-size * 1.2;
+	}
+}
+
+// Custom spacing helper (example of using Sass features)
+.content-wrapper {
+	padding: map-get($spacers, 4);
+
+	@include media-breakpoint-up(md) {
+		padding: map-get($spacers, 5);
+	}
+}
