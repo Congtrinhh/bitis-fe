@@ -162,12 +162,20 @@ main.main-content {
 ol.breadcrumb {
 	margin: 0;
 }
-.fixed-header {
-	overflow: auto;
-	height: 100px;
-}
+
 .fixed-header thead th {
 	position: sticky;
 	top: 0;
 	z-index: 1;
+}
+
+table.table-fit {
+	width: auto !important;
+	table-layout: auto !important;
+}
+table.table-fit thead th,
+table.table-fit tbody td,
+table.table-fit tfoot th,
+table.table-fit tfoot td {
+	width: auto !important;
 }

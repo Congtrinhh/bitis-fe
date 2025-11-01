@@ -1,28 +1,34 @@
 # bitis-fe
 
-Biti's like website with frontend technologies such as
+Biti's like website with frontend technologies:
 
--   HTML, CSS, Javscript
+-   HTML, CSS, Javascript
+-   Responsive design
 -   JQuery
 -   Bootstrap
--   Responsive design
 
-## Custom bootstrap style
+## Customize Bootstrap styles
 
-For more details, read https://getbootstrap.com/docs/5.0/customize/sass/
+Follow the steps below to customize Bootstrap styles.  
+For more details, read https://getbootstrap.com/docs/5.2/customize/sass/
 
-### init npm
+### Initialize npm in our project
 
+```
 npm init -y
+```
 
-### instal bootstrap, sass latest version
+### Install Bootstrap, sass latest version
 
+```
 npm install bootstrap@5.3.2 sass --save-dev
+```
 
-### configure
+### Add customized scss file
 
-1. Add customized scss to /assets/scss/custom-bootstrap.scss
-2. Configure package.json to compile and watch scss changes
+Add customized scss to /assets/scss/custom-bootstrap.scss. we will override sass variables to create different styles for our Bootstrap components, text utils, spacing utils..
+
+### Configure package.json to compile and watch scss changes
 
 ```
 "scripts": {
@@ -32,6 +38,13 @@ npm install bootstrap@5.3.2 sass --save-dev
 },
 ```
 
-### compile sass to css
+Note:
 
+-   `assets/scss/custom-bootstrap.scss` is the location of the scss file we created earlier.
+-   `assets/css/custom-bootstrap.css` is the compiled css file we want to create.
+
+### Compile sass to css
+
+```
 npm run sass:watch
+```
