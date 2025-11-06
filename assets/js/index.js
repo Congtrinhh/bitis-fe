@@ -1,3 +1,20 @@
+/**
+ * load file html và gán vào element có id tương ứng
+ * @param {*} elementId
+ * @param {*} filePath
+ */
+async function loadComponent(elementId, filePath) {
+	const response = await fetch(filePath);
+	const html = await response.text();
+	document.getElementById(elementId).innerHTML = html;
+}
+
+// load header, footer
+document.addEventListener("DOMContentLoaded", () => {
+	loadComponent("header", "./fractions/header.html");
+	loadComponent("footer", "./fractions/footer.html");
+});
+
 // vẽ dot
 //lấy số lượng ảnh
 const carouselContainer = document.getElementById("heroCarousel");
@@ -71,50 +88,15 @@ function loadProductsAjax() {
 
 $(document).ready(function () {
 	loadProductsAjax();
-
-	$("#ajaxButtonGet").click(function () {
-		$.ajax({
-			url: "https://jsonplaceholder.typicode.com/posts/1",
-			type: "get",
-			success: function (data) {
-				console.log(data);
-			},
-			error: function (err) {
-				console.error("Error fetching data:", err);
-			},
-		});
-	});
-
-	$("#ajaxButtonSave").click(function () {
-		const postData = {
-			name: "Hunter X - Denim",
-			data: {
-				price: 645000,
-				inStock: true,
-			},
-		};
-		$.ajax({
-			url: "https://api.restful-api.dev/objects",
-			type: "post",
-			data: JSON.stringify(postData),
-			contentType: "application/json",
-			success: function (data) {
-				console.log(data);
-			},
-			error: function (err) {
-				console.error("Error fetching data:", err);
-			},
-		});
-	});
 });
 
 /**
  * gán product item vào product list container
  */
 const appendProduct = (product) => {
-	const container = document.querySelector(".top-products > .container");
+	const container = document.querySelector(".top-products > .container > .row");
 
-	const template = `<div class="product-wrapper">
+	const template = `<div class="product-wrapper col-6 col-md-4 col-lg-3">
 						<div class="img-wrapper"><img src="${product.image}" alt="" /></div>
 						<div class="product-info">
 							<div class="size-color">

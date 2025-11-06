@@ -4,11 +4,11 @@
 }
 
 .top-products > .container {
-	max-width: 1280px;
+	/* max-width: 1280px;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 24px;
+	gap: 24px; */
 }
 
 /* product card */
@@ -16,7 +16,6 @@
 .product-wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 302px;
 	border: 1px solid #ddd;
 
 	position: relative;
@@ -30,7 +29,6 @@
 .product-wrapper .img-wrapper {
 	cursor: pointer;
 	overflow: hidden;
-	height: 302px;
 }
 
 .product-wrapper .img-wrapper img {
